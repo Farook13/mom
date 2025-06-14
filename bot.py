@@ -11,7 +11,7 @@ from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
 from database.users_chats_db import db
-from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, SUPPORT_CHAT_ID
+from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL  # Removed SUPPORT_CHAT_ID
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
@@ -55,10 +55,7 @@ class Bot(Client):
 
         await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
 
-        try:
-            await self.send_message(chat_id=SUPPORT_CHAT_ID, text=script.RESTART_GC_TXT.format(today, time))
-        except Exception as e:
-            logging.warning(f"Could not send message to SUPPORT_CHAT_ID: {e}")
+        # Removed SUPPORT_CHAT_ID message block
 
     async def stop(self, *args):
         await super().stop()
