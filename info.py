@@ -29,7 +29,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
 # Bot images & videos
-PICS = (environ.get('PICS', '')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/Mll.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/Mkp.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
@@ -52,7 +52,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batman13:batman13@batman.sawvl.mongodb.net/?retryWrites=true&w=majority&appName=batman")
 DATABASE_NAME = environ.get('DATABASE_NAME', "batman")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TELEGRAM_FILES')
 
 # Others
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
