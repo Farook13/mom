@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '12618934'))
 API_HASH = environ.get('API_HASH', '49aacd0bc2f8924add29fb02e20c8a16')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7955939332:AAEdOnvwUto73T6Rv93tkcAZJO6eaOHrMnw')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7693803634:AAErirlVX-Y_XKPEdaNKbN_0UK4hVXSLkAk')
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
@@ -50,8 +50,8 @@ SUPPORT_CHAT_ID = -1001792675255
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://farook:farook@cluster0.aaed9bf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster")
-DATABASE_NAME = environ.get('DATABASE_NAME', "farook")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batman13:batman13@batman.sawvl.mongodb.net/?retryWrites=true&w=majority&appName=batman")
+DATABASE_NAME = environ.get('DATABASE_NAME', "batman")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
 # Others
