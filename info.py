@@ -59,7 +59,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = environ.get('LOG_CHANNEL', 'hcjdhdhxidjshudhchd')  # no @ symbol
-SUPPORT_CHAT_ID = "cine_flix01"  # e.g. "my_support_group"
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "cine_flix01")  # Or any fallback username
+ # e.g. "my_support_group"
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
