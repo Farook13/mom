@@ -269,7 +269,7 @@ out += '\n'
 try:
 await raju.edit_text(out)
 except MessageTooLong:
-with open('chats.txt', w+') as outfile:
+with open('chats.txt', 'w+') as outfile:
 outfile.write(out)
 await message.reply_document('chats.txt', caption="List Of Chats")
 
