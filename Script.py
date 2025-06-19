@@ -45,7 +45,7 @@ class script(object):
 Special Thanks to EvaMaria Devs & Cloners for the codes 
 <b>DEV:</b>
 
-- <a href=https://t.me/Farook13>[𝖯𝖨𝖱𝖮]</a>
+- <a href=https://t.me/Farook13>[FAROOK]</a>
 
 - Source - https://github.com/oomb""" #please don't change repo link give credit :)
 
